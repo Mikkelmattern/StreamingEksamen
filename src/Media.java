@@ -1,0 +1,16 @@
+public abstract class Media {
+    String title;
+    String[] actors;
+
+    public Media(String title, String... actors){
+        this.title = title;
+        this.actors = actors;
+    }
+    public void getInfo() {
+
+    }
+
+    public String getName(){
+        return title;
+    }
+}
