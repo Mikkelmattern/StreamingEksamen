@@ -1,17 +1,28 @@
-public class Season{
-    private int episodes;
-    private String name;
+import java.util.ArrayList;
+import java.util.List;
 
-    Season(String series, int season, Episode episode) {
+public class Season {
+    private List<Episode> episodes = new ArrayList<>();
+    private int season;
 
-    }
-    public String getName(){
-        return name;
-    }
-
-    public Episode getEpisode(Episode episode) {
-        return episode;
+    Season(int season) {
+        this.season = season;
     }
 
-    ;
+    public void addEpisode(Episode episode) {
+        episodes.add(episode);
+    }
+
+    public int getSeasonLength() {
+        return episodes.size();
+    }
+
+    public Episode getEpisode(int i) {
+        return episodes.get(i-1);
+    }
+
+    public int episodeCount() {
+        return episodes.size();
+    }
+
 }

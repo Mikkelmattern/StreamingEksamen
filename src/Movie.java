@@ -17,4 +17,9 @@ public class Movie extends Media implements Playable {
     public String toString() {
         return "Titel: " + super.title + "\nDirektør: " + director;
     }
+
+    @Override
+    public String getType() {
+        return "Movie";
+    }
 }

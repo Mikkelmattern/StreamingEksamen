@@ -9,7 +9,7 @@ public abstract class Media {
     public void getInfo() {
 
     }
-
+    public abstract String getType();
     public String getName(){
         return title;
     }
